@@ -1,0 +1,8 @@
+{
+  "name": "Daily doses",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "077b1e0c"
+}
