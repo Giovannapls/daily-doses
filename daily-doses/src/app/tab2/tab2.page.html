@@ -12,6 +12,33 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card style="background-color:  	#526084;">
+    <img src="assets/ImagemBomDia.png" />
+    <ion-card-header>
+      <ion-card-subtitle style="color: 	#191970;"> <b>Frase por:</b></ion-card-subtitle>
+      <ion-card-title style="color:white">{{frase.author}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="color:#FFFFF0">
+      {{frase.text}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card >
+    <ion-item >
+      <ion-icon name="leaf-outline" slot="start"></ion-icon>
+      <ion-label>Feriados esse mês</ion-label>
+    </ion-item>
+  
+    <ion-card-content style="background-color:  	#00FF7F;">
+      <ion-list style="background-color:  	#2E8B57;">
+        <ion-item *ngFor="let feriado of listaFeriados">
+          <ion-label>
+            <h2>{{ feriado.name }} - {{feriado.date.iso}}</h2>
+            <p style="text-overflow: initial;white-space: normal;">{{ feriado.description }}</p>
+          </ion-label>
+        </ion-item>
+        <div style="height: 10px;"></div>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
