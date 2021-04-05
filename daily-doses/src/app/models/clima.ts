@@ -1,12 +1,7 @@
+import { forecastClima } from "./forecastClima";
+
 export class clima{
-    Country: string;
-    CountryCode: string;
-    Province: string;
-    City: string;
-    CityCode: string;
-    Lat: string;
-    Lon: string;
-    Cases: bigint;
-    Status: string;
+    Temp: bigint;
     Date: string;
+    forecast:Array<forecastClima>;
 }

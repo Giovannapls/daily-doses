@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { HttpClient } from '@angular/common/http';
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 import { Observable } from 'rxjs';
+import {clima} from '../models/clima';
 
 @NgModule({
   imports: [
