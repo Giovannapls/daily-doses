@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Evolução da Covid19
+      Evolução da Covid-19
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,18 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Covid-19</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-card style="background-color:  	#700d1a;height: 100%; display: flex; align-items:center; justify-content: center;">
     <ion-card-header>
       <ion-card-title style="color: 	white;text-align: center;font-size:xx-large ;"> <b>Informação de Hoje</b></ion-card-title>
-      <ion-card-title style="color: 	white;text-align: center;font-size:smaller ;"> <b>{{aday}}-{{amonth}}-{{ayear}}</b></ion-card-title>
+      <ion-card-title style="color: 	white;text-align: center;font-size:smaller ;"> <b>{{dateformatedBR}}</b></ion-card-title>
       <div style="height: 50px;"></div>
-      <ion-card-subtitle style="color: 	white;text-align: center;font-size: x-large;"> <b>Casos confirmados: {{covidConfirmed.Cases}}</b></ion-card-subtitle>
-      <ion-card-subtitle style="color: 	white;text-align: center;font-size: x-large;"> <b>Casos de recuperação: {{covidRecovered.Cases}}</b></ion-card-subtitle>      
-      <ion-card-subtitle style="color: 	white;text-align: center;font-size: x-large;"> <b>Mortes pela doença: {{covidDeaths.Cases}}</b></ion-card-subtitle>
+      <ion-card-subtitle style="color: 	white;text-align: center;font-size: x-large;"> <b>Casos confirmados: {{covidConfirmed.Cases | number }}</b></ion-card-subtitle>
+      <ion-card-subtitle style="color: 	white;text-align: center;font-size: x-large;"> <b>Casos de recuperação: {{covidRecovered.Cases | number}}</b></ion-card-subtitle>      
+      <ion-card-subtitle style="color: 	white;text-align: center;font-size: x-large;"> <b>Mortes pela doença: {{covidDeaths.Cases | number}}</b></ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
