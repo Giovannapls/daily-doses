@@ -24,13 +24,11 @@ export class Tab2Page {
     this.feriadosRequest
     .subscribe(data => {
       this.listaFeriados = data.response.holidays;
-      console.log('my data: ', this.listaFeriados);
     })
 
     this.fraseRequest
     .subscribe(data => {
       this.frase = data.quotes[0];
-      console.log('my data: ', data.quotes[0]);
     })
   }
 }
